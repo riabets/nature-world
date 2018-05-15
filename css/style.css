@@ -1,0 +1,48 @@
+body {
+    font-family:Arial, sans-serif;
+}
+* {
+    box-sizing:border-box;
+}
+.bill-heading {
+    text-align:center;
+    color:#000;
+}
+.bill-main {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #EEDBA3;
+    padding: 70px 0;
+}
+.bill-circle {
+    width: 1000px;
+    height: 1000px;
+    border: 15px double #3F2400;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.bill-inner-circle {
+    width: 800px;
+    height: 800px;
+    border: 15px double #3F2400;
+    border-radius: 50%;
+    margin: 85px auto;
+}
+.bill-triangle {
+    background-color: transparent;
+    border: 340px solid #3F2400;
+    border-color: transparent transparent #3F2400 transparent;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    margin: 45px;
+}
+.bill-triangle::before {
+    background-color: transparent;
+    border: 305px solid #856d41;
+    border-color: transparent transparent #EEDBA3 transparent;
+    margin-top: 0;
+    position: absolute;
+    top: -285px;
+    left: -305px;
+}

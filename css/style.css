@@ -9,24 +9,27 @@ body {
     color:#000;
 }
 .bill-main {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #EEDBA3;
-    padding: 70px 0;
+    width:100%;
+    margin:0 auto;
+    background-color:#EEDBA3;
+    padding:70px 0;
+    position:relative;
 }
 .bill-circle {
-    width: 1000px;
-    height: 1000px;
-    border: 15px double #3F2400;
-    border-radius: 50%;
-    margin: 0 auto;
+    width:1000px;
+    height:1000px;
+    border:15px double #3F2400;
+    border-radius:50%;
+    margin:0 auto;
 }
 .bill-inner-circle {
-    width: 800px;
-    height: 800px;
-    border: 15px double #3F2400;
-    border-radius: 50%;
-    margin: 85px auto;
+    width:800px;
+    height:800px;
+    border:15px double #3F2400;
+    border-radius:50%;
+    position: absolute;
+    left: 29%;
+    top: 15%;
 }
 .bill-triangle {
     background-color: transparent;
@@ -34,15 +37,84 @@ body {
     border-color: transparent transparent #3F2400 transparent;
     margin-top: 0;
     position: absolute;
-    top: 0;
-    margin: 45px;
+    top: -21%;
+    left: 6%;
+    transform: rotateY(53deg);
 }
 .bill-triangle::before {
+    content:"";
     background-color: transparent;
-    border: 305px solid #856d41;
+    border: 326px solid #856d41;
     border-color: transparent transparent #EEDBA3 transparent;
     margin-top: 0;
     position: absolute;
-    top: -285px;
-    left: -305px;
+    top: -317px;
+    left: -326px;
+}
+.stick1, .stick2, .stick3, .stick4, .stick5, .stick6, .stick7, .stick8, .stick9, .stick10 {
+    width: 5px;
+    height: 90px;
+    position: absolute;
+    background-color: #3F2400;
+}
+.stick1 {
+    top: 14%;
+    left: 36.9%;
+    transform: rotateZ(-35deg);
+}
+.stick2 {
+    top: 7.5%;
+    left: 50%;
+    transform: rotateZ(0deg);
+}
+.stick3 {
+    top: 14.5%;
+    left: 63.4%;
+    transform: rotateZ(35deg);
+}
+.stick4 {
+    top: 35%;
+    left: 27.5%;
+    transform: rotateZ(-75deg);
+}
+.stick5 {
+    top: 35%;
+    left: 72.5%;
+    transform: rotateZ(75deg);
+}
+.stick6 {
+    top: 77%;
+    left: 35.9%;
+    transform: rotateZ(44deg);
+}
+.stick7 {
+    top: 85%;
+    left: 50%;
+    transform: rotateZ(0deg);
+}
+.stick8 {
+    top: 58%;
+    left: 27.6%;
+    transform: rotateZ(-113deg);
+}
+.stick9 {
+    top: 58%;
+    left: 72.3%;
+    transform: rotateZ(113deg);
+}
+.stick10 {
+    top: 77%;
+    left: 64.1%;
+    transform: rotateZ(-44deg);
+}
+/*************Triangle************/
+.bowtie {
+    position: absolute;
+    height: 0;
+    background: #000;
+    border: 60px solid #000;
+    border-bottom-width: 20px;
+    border-top-width: 20px;
+    border-color: #eedba3 #3f2400 #eedba3 #3f2400;
+    margin: 250px 0 0 -56px;
 }

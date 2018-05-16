@@ -11,8 +11,10 @@ body {
 .bill-main {
     width:100%;
     margin:0 auto;
+    transform: scale(0.6);
     background-color:#EEDBA3;
     padding:70px 0;
+    box-shadow: 3px 3px 3px 0px #000;
     position:relative;
     background:-moz-radial-gradient(center, ellipse cover, rgba(238, 219, 163, 0.7) 0%, rgba(238, 219, 163, 0.8) 50%, rgb(243, 196, 60) 100%);
     background:-webkit-radial-gradient(center, ellipse cover, rgba(238, 219, 163, 0.7) 0%, rgba(238, 219, 163, 0.8) 50%, rgb(243, 196, 60) 100%);

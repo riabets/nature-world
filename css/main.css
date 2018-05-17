@@ -1,0 +1,80 @@
+body {
+    font-family:Arial, sans-serif;
+}
+* {
+    box-sizing:border-box;
+}
+.bill-heading {
+    text-align:center;
+    color:#3f2400;
+}
+.bill-main {
+    width:100%;
+    margin:0 auto;
+    transform:scale(0.6);
+    background-color:#EEDBA3;
+    padding:70px 0;
+    box-shadow:3px 3px 3px 0 #000;
+    position:relative;
+    background:-moz-radial-gradient(center, ellipse cover, rgba(238, 219, 163, 0.7) 0%, rgba(238, 219, 163, 0.8) 50%, rgb(243, 196, 60) 100%);
+    background:-webkit-radial-gradient(center, ellipse cover, rgba(238, 219, 163, 0.7) 0%, rgba(238, 219, 163, 0.8) 50%, rgb(243, 196, 60) 100%);
+    background:radial-gradient(ellipse at center, rgba(238, 219, 163, 0.7) 0%, rgba(238, 219, 163, 0.8) 50%, rgb(243, 196, 60) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
+}
+.bill-main::before {
+    content:"";
+    -webkit-clip-path:polygon(0% 0%, 5% 100%, 10% 0%, 15% 100%, 20% 0%, 25% 100%, 30% 0%, 35% 100%, 40% 0%, 45% 100%, 50% 0%, 55% 100%, 60% 0%, 65% 100%, 70% 0%, 75% 100%, 80% 0%, 85% 100%, 90% 0%, 95% 100%, 100% 0%);
+    height:2px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0px;
+    background-color:#ffffff;
+}
+.bill-main::after {
+    content:"";
+    -webkit-clip-path:polygon(0% 0%, 5% 100%, 10% 0%, 15% 100%, 20% 0%, 25% 100%, 30% 0%, 35% 100%, 40% 0%, 45% 100%, 50% 0%, 55% 100%, 60% 0%, 65% 100%, 70% 0%, 75% 100%, 80% 0%, 85% 100%, 90% 0%, 95% 100%, 100% 0%);
+    height:2px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:auto;
+    background-color:#452a05;
+    bottom:0;
+}
+.bill-circle {
+    width:1000px;
+    height:1000px;
+    border:15px double #3F2400;
+    border-radius:50%;
+    margin:0 auto;
+}
+.bill-inner-circle {
+    width:800px;
+    height:800px;
+    border:15px double #3F2400;
+    border-radius:50%;
+    position:absolute;
+    left:29%;
+    top:15%;
+}
+.bill-triangle {
+    background-color:transparent;
+    border:340px solid #3F2400;
+    border-color:transparent transparent #3F2400 transparent;
+    margin-top:0;
+    position:absolute;
+    top:-21%;
+    left:6%;
+    transform:rotateY(53deg);
+}
+.bill-triangle::before {
+    content:"";
+    background-color:transparent;
+    border:326px solid #856d41;
+    border-color:transparent transparent #f2e4bb transparent;
+    margin-top:0;
+    position:absolute;
+    top:-317px;
+    left:-326px;
+}

@@ -72,7 +72,7 @@ body {
     content:"";
     background-color:transparent;
     border:326px solid #856d41;
-    border-color:transparent transparent #EEDBA3 transparent;
+    border-color:transparent transparent #f2e4bb transparent;
     margin-top:0;
     position:absolute;
     top:-317px;
@@ -119,10 +119,28 @@ body {
     left:50%;
     transform:rotateZ(0deg);
 }
+.stick7::after {
+    content:"";
+    width:50px;
+    height:50px;
+    background-color:#000;
+    position:absolute;
+    -webkit-clip-path:polygon(50% 0%, 64% 31%, 98% 35%, 69% 57%, 83% 92%, 50% 70%, 7% 97%, 25% 54%, 0 25%, 35% 28%);
+    clip-path:polygon(50% 0%, 64% 31%, 98% 35%, 69% 57%, 83% 92%, 50% 70%, 7% 97%, 25% 54%, 0 25%, 35% 28%);
+}
 .stick8 {
     top:58%;
     left:27.6%;
     transform:rotateZ(-113deg);
+}
+.stick8::after {
+    content:"";
+    width:50px;
+    height:50px;
+    background-color:#000;
+    position:absolute;
+    -webkit-clip-path:polygon(8% 24%, 33% 5%, 66% 5%, 81% 21%, 79% 39%, 93% 47%, 94% 66%, 76% 66%, 65% 85%, 32% 91%, 14% 81%, 6% 65%, 27% 59%, 41% 65%, 51% 56%, 55% 40%, 49% 26%, 32% 22%);
+    clip-path:polygon(8% 24%, 33% 5%, 66% 5%, 81% 21%, 79% 39%, 93% 47%, 94% 66%, 76% 66%, 65% 85%, 32% 91%, 14% 81%, 6% 65%, 27% 59%, 41% 65%, 51% 56%, 55% 40%, 49% 26%, 32% 22%);
 }
 .stick9 {
     top:58%;
@@ -142,7 +160,7 @@ body {
     border:60px solid #3f2400;
     border-bottom-width:20px;
     border-top-width:20px;
-    border-color:#eedba3 #3f2400 #eedba3 #3f2400;
+    border-color:#f2e4bb #3f2400 #f2e4bb #3f2400;
     margin:250px 0 0 -60px;
     border-radius:10px;
 }
@@ -161,24 +179,24 @@ body {
     width:142px;
     height:110px;
     position:absolute;
-    background-color:#eedba3;
+    background-color:#f2e4bb;
     border:2px solid #3f2400;
     border-radius:120px 0 120px 0;
     transform:rotateZ(36deg);
-    top:100px;
+    top:70px;
     left:-67px;
 }
 .eye::after {
     content:"";
     width:27px;
-    height:78px;
-    border:1px solid #3f2400;
-    background:#3f2400;
+    height:68px;
+    border:4px solid #3f2400;
+    background:#f2e4bb;
     position:absolute;
     border-radius:20px 20px 20px 20px;
     transform:rotateZ(-35deg);
     top:15px;
-    left:52px;
+    left:50px;
 }
 .eyelid-top {
     width:3px;
@@ -263,6 +281,118 @@ body {
     top:49px;
     left:-60px;
     border-color:#000 transparent #000 transparent;
+}
+.brick-item {
+    width:175px;
+    position:absolute;
+    height:40px;
+    background-color:transparent;
+    border:2px solid #000;
+}
+.brick-item:nth-child(1) {
+    top:-6px;
+    width: 275px;
+    border-color: #000 #000 #000 transparent;
+}
+.brick-item:nth-child(2) {
+    left:-40px;
+    top:32px;
+    border-color: #000 #000 #000 transparent;
+}
+.brick-item:nth-child(3) {
+    left:-71px;
+    top:71px;
+    border-color: #000 #000 #000 transparent;
+}
+.brick-item:nth-child(4) {
+    left: 99px;
+    top: 71px;
+    width: 285px;
+}
+.brick-item:nth-child(5) {
+    width: 200px;
+    left: 236px;
+    right: 0;
+    top: -6px;
+    bottom: 0;
+    border-color: #000 transparent #000 transparent;
+}
+.brick-item:nth-child(6) {
+    left: 131px;
+    top: 33px;
+}
+.brick-item:nth-child(7) {
+    left: 383px;
+    right: 0;
+    top: 71px;
+    bottom: 0;
+    width: 138px;
+    border-color: #000 transparent #000 #000;
+}
+.brick-item:nth-child(8) {
+    width: 175px;
+    left: 300px;
+    right: 0;
+    top: 32px;
+    bottom: 0;
+    border-color: #000 transparent #000 #000;
+}
+.brick-item::after {
+    content:"";
+    position:absolute;
+    border-color:transparent #000 transparent #000 !important;
+}
+.brick-item:nth-child(1)::after{
+    width:150px;
+    height:60px;
+    border:2px solid #3f2400;
+    top: 48px;
+}
+.brick-item:nth-child(2)::after{
+    width:60px;
+    height:30px;
+    border:2px dotted #3f2400;
+    top: 43px;
+}
+.brick-item:nth-child(3)::after{
+    width: 150px;
+    height: 45px;
+    border: 2px solid #3f2400;
+    top: -12px;
+    left: 344px;
+}
+.brick-item:nth-child(4)::after{
+    width: 60px;
+    height: 43px;
+    border: 3px dotted #3f2400;
+    top: -10px;
+    left: -50px;
+}
+.brick-item:nth-child(5)::after{
+    width: 80px;
+    height: 60px;
+    border: 4px dashed #3f2400;
+    top: 47px;
+}
+.brick-item:nth-child(6)::after{
+    width: 60px;
+    height: 30px;
+    border: 2px double #3f2400;
+    top: 43px;
+    left: 30px;
+}
+.brick-item:nth-child(7)::after{
+    width: 140px;
+    height: 50px;
+    border: 2px dashed #3f2400;
+    top: -16px;
+    right: 41px;
+}
+.brick-item:nth-child(8)::after{
+    width:60px;
+    height:30px;
+    border:2px dotted #3f2400;
+    top: 43px;
 }
 /*Dots*/
 .speck1 {
